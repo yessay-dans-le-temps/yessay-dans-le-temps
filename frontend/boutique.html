@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique - Yessay Dans Le Temps</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Découvrez la collection Yessay Dans Le Temps : pulls, t-shirts, casquettes et lacoste. Des vêtements de qualité, intemporels et stylés.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+    <div class="brand-container">
+        <img src="images/logo.png" alt="Yessay Dans Le Temps" class="navbar-logo" width="100" height="90">
+        <span class="brand-text">
+        </span>
+    </div>
+</a>
+
+      <!-- Bouton menu mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenu navigation -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-house"></i> Accueil
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="boutique.html">
+              <i class="bi bi-shop"></i> Boutique
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              <i class="bi bi-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="navbar-actions">
+          <!-- Recherche -->
+          <div class="search-container">
+            <label for="search" class="visually-hidden">Rechercher un produit</label>
+            <input id="search" type="text" class="search-input" placeholder="Rechercher..." aria-label="Rechercher un produit">
+            <button class="search-btn" aria-label="Lancer la recherche">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <!-- Compte -->
+          <a href="#" class="nav-icon-btn" title="Mon compte">
+            <i class="bi bi-person"></i>
+          </a>
+
+          <!-- Panier -->
+          <a href="cart.html" class="nav-icon-btn cart-btn" title="Voir mon panier">
+            <i class="bi bi-bag"></i>
+            <span class="cart-badge" id="cart-count" aria-live="polite">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-4">Notre Collection</h1>
+
+        <!-- Filtre catégories -->
+        <div class="category-filter mb-4" id="category-filter">
+          <!-- Categories dynamiques -->
+        </div>
+
+        <!-- Produits -->
+        <div class="row" id="all-products">
+          <!-- Produits dynamiques -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Colonne 1 -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h2 class="footer-title h5">
+            <i class="bi bi-stars me-2 text-warning"></i>Yessay Dans Le Temps
+          </h2>
+          <p class="footer-text">
+            Votre marque de vêtements préférée pour un style unique et intemporel. Des vêtements de qualité pour toutes les occasions.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Colonne 2 -->
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h3 class="text-uppercase h6 mb-3">Liens Rapides</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="cart.html">Panier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 -->
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h3 class="text-uppercase h6 mb-3">Catégories</h3>
+          <ul class="footer-links">
+            <li><a href="boutique.html?category=pulls">Pulls</a></li>
+            <li><a href="boutique.html?category=tshirts">T-Shirts</a></li>
+            <li><a href="boutique.html?category=casquettes">Casquettes</a></li>
+            <li><a href="boutique.html?category=lacoste">Lacoste</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 -->
+        <div class="col-lg-4 col-md-4">
+          <h3 class="text-uppercase h6 mb-3">Contact</h3>
+          <div class="footer-contact"><i class="bi bi-geo-alt-fill"></i> Dakar, Sénégal</div>
+          <div class="footer-contact"><i class="bi bi-envelope-fill"></i> yessaydansletemps@gmail.com</div>
+          <div class="footer-contact"><i class="bi bi-telephone-fill"></i> +221 77 191 57 72</div>
+          <div class="footer-contact"><i class="bi bi-whatsapp"></i> +221 77 191 57 72</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center mt-4">
+        <p>&copy; <span id="year"></span> Yessay Dans Le Temps. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/222771915772" class="whatsapp-float" target="_blank" aria-label="Discuter sur WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script>
+    // Mettre automatiquement l'année dans le footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

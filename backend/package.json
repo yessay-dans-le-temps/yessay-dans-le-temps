@@ -1,0 +1,17 @@
+{
+  "name": "yessay-dans-le-temps",
+  "version": "1.0.0",
+  "description": "Site e-commerce Yessay Dans Le Temps",
+  "scripts": {
+    "start": "cd backend && node server.js",
+    "dev": "cd backend && nodemon server.js",
+    "install-backend": "cd backend && npm install",
+    "build": "echo 'Build completed'"
+  },
+  "keywords": ["ecommerce", "senegal", "clothing"],
+  "author": "Yessay Dans Le Temps",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

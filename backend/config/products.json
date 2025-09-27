@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "slug": "pull-premium",
+    "title": "Pull-Coton ",
+    "price": 9900,
+    "description": "Un pull confortable et élégant pour toutes les occasions.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      {
+        "name": "Noir",
+        "image": "/images/products/pull-noir.jpg",
+        "colorCode": " #000000 "
+      },
+      {
+        "name": "gris",
+        "image": "/images/products/pull-gris.jpg",
+        "colorCode": "#808080 "
+      },
+      {
+        "name": "rouge",
+        "image": "/images/products/pull-rouge.jpg",
+        "colorCode": "#8b0000 "
+      },
+      {
+        "name": "Blanc",
+        "image": "/images/products/pull-blanc.jpg",
+        "colorCode": "#ffffff "
+      }
+    ],
+    "category": "pulls"
+  },
+  {
+    "id": 2,
+    "slug": "lacoste-premium",
+    "title": "Lacoste-coton",
+    "price": 4900,
+    "description": "Un polo élégant avec le crocodile emblématique.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      {
+        "name": "Noir",
+        "image": "/images/products/lacoste-noir.jpg",
+        "colorCode": " #000000 "
+      },
+      {
+        "name": "Gris",
+        "image": "/images/products/lacoste-gris.jpg",
+        "colorCode": "#808080 "
+      },
+      {
+        "name": "Rouge",
+        "image": "/images/products/lacoste-rouge.jpg",
+        "colorCode": "#8b0000 "
+      },
+      {
+        "name": "ffffff ",
+        "image": "/images/products/lacoste-blanc.jpg",
+        "colorCode": "#ffffff "
+      }
+    ],
+    "category": "lacoste"
+  },
+  {
+    "id": 3,
+    "slug": "tshir-premium",
+    "title": "T-Shirt",
+    "price": 3900,
+    "description": "Le t-shirt emblématique de la marque avec le logo brodé.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      {
+        "name": "Noir",
+        "image": "/images/products/tshirt-noir.jpg",
+        "colorCode": " #000000 "
+      },
+      {
+        "name": "Gris",
+        "image": "/images/products/tshirt-gris.jpg",
+        "colorCode": "#808080 "
+      },
+      {
+        "name": "Rouge",
+        "image": "/images/products/tshirt-rouge.jpg",
+        "colorCode": "#8b0000 "
+      },
+      {
+        "name": "Blanc",
+        "image": "/images/products/tshirt-blanc.jpg",
+        "colorCode": "#ffffff "
+      }
+    ],
+    "category": "tshirts"
+  },
+  {
+    "id": 4,
+    "slug": "casquette",
+    "title": "Casquette",
+    "price": 2900,
+    "description": "Une casquette ajustable avec visière courbée.",
+    "sizes": ["One Size"],
+    "colors": [
+      {
+        "name": "Noir",
+        "image": "/images/products/casquette-noir.jpg",
+        "colorCode": " #000000 "
+      },
+      {
+        "name": "Gris",
+        "image": "/images/products/casquette-gris.jpg",
+        "colorCode": "#808080"
+      },
+      {
+        "name": "Rouge",
+        "image": "/images/products/casquette-rouge.jpg",
+        "colorCode": "#8b0000 "
+      },
+      {
+        "name": "Blanc",
+        "image": "/images/products/casquette-blanc.jpg",
+        "colorCode": "#ffffff "
+      }
+    ],
+    "category": "casquettes"
+  }
+]

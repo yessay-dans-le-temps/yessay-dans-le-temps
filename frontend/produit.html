@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit - Yessay Dans Le Temps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+        <!-- Logo et nom de marque -->
+        <a class="navbar-brand" href="index.html">
+            <div class="brand-container">
+        <img src="images/logo.png" alt="Yessay Dans Le Temps" class="navbar-logo" width="100" height="90">
+        <span class="brand-text">
+        </span>
+    </div>
+</a>
+
+        <!-- Bouton menu mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenu de la navigation -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Menu principal -->
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house"></i> Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="boutique.html">
+                        <i class="bi bi-shop"></i> Boutique
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="bi bi-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Actions utilisateur -->
+            <div class="navbar-actions">
+                <!-- Barre de recherche -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Rechercher...">
+                    <button class="search-btn">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <!-- Compte utilisateur -->
+                <a href="#" class="nav-icon-btn" title="Mon compte">
+                    <i class="bi bi-person"></i>
+                </a>
+
+                <!-- Panier -->
+                <a href="cart.html" class="nav-icon-btn cart-btn" title="Panier">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="container py-5">
+        <div class="row" id="product-details">
+            <!-- Product details will be loaded here -->
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h3 class="footer-title">
+                    <i class="bi bi-stars me-2 text-warning"></i>Yessay Dans Le Temps
+                </h3>
+                <p class="footer-text">Votre marque de vêtements préférée pour un style unique et intemporel. Des vêtements de qualité pour toutes les occasions.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Liens Rapides</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="cart.html">Panier</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Catégories</h5>
+                <ul class="footer-links">
+                    <li><a href="boutique.html?category=pulls">Pulls</a></li>
+                    <li><a href="boutique.html?category=tshirts">T-Shirts</a></li>
+                    <li><a href="boutique.html?category=casquettes">Casquettes</a></li>
+                    <li><a href="boutique.html?category=lacoste">Lacoste</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h5 class="text-uppercase mb-4">Contact</h5>
+                <div class="footer-contact">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Dakar, Sénégal</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>yessaydansletemps@gmail.com</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="bi bi-telephone-fill"></i>
+                    <span>+221 77 191 57 72</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="bi bi-whatsapp"></i>
+                    <span>+221 77 191 57 72</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yessay Dans Le Temps. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/221771915772" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/221771915772" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

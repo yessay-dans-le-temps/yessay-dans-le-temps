@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yessay Dans Le Temps — Marque de vêtements</title>
+  <meta name="description" content="Yessay — pulls, t-shirts, lacostes et casquettes. Livraison rapide au Sénégal.">
+
+  <!-- Bootstrap CSS (stable CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (single include) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Your improved stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Navigation principale">
+    <div class="container">
+     <a class="navbar-brand" href="index.html">
+    <div class="brand-container">
+        <img src="images/logo.png" alt="Yessay Dans Le Temps" class="navbar-logo" width="100" height="90">
+        <span class="brand-text">
+        </span>
+    </div>
+</a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1" aria-hidden="true"></i> Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="boutique.html"><i class="bi bi-shop me-1" aria-hidden="true"></i> Boutique</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1" aria-hidden="true"></i> Contact</a></li>
+        </ul>
+
+        <div class="navbar-actions d-flex align-items-center gap-2">
+          <div class="search-container d-none d-md-flex align-items-center">
+            <label for="site-search" class="visually-hidden">Rechercher</label>
+            <input id="site-search" class="search-input" type="search" placeholder="Rechercher..." aria-label="Rechercher">
+            <button class="search-btn" aria-label="Lancer la recherche"><i class="bi bi-search"></i></button>
+          </div>
+
+          <a href="#" class="nav-icon-btn" title="Mon compte" aria-label="Mon compte"><i class="bi bi-person"></i></a>
+
+          <a href="cart.html" class="nav-icon-btn cart-btn position-relative" title="Panier" aria-label="Voir le panier">
+            <i class="bi bi-bag"></i>
+            <span id="cart-count" class="cart-badge" aria-live="polite">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section pt-5 pb-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6 hero-content">
+            <h1 class="hero-title">Style intemporel, élégance moderne</h1>
+            <p class="hero-subtitle">Découvrez notre collection exclusive : pulls, lacostes, t-shirts et casquettes — qualité supérieure, designs soignés.</p>
+            <a class="btn hero-btn" href="boutique.html" role="button">
+              <i class="bi bi-arrow-right me-2" aria-hidden="true"></i>Découvrir la collection
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image rounded-lg shadow-lg overflow-hidden">
+              <picture>
+                <source srcset="images/hero-large.jpg 1200w, images/hero-medium.jpg 800w" sizes="(min-width: 992px) 50vw, 100vw">
+                <img src="images/hero.jpg" alt="Collection Yessay — pull et casquette" class="img-fluid" loading="lazy">
+              </picture>
+              <div class="position-absolute bottom-0 start-0 m-3">
+                <span class="badge bg-warning text-dark p-2">Nouvelle Collection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Produits populaires</h2>
+
+        <div class="row g-4" id="featured-products">
+          <!-- JS injection point: template fourni ci-dessous -->
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="boutique.html" class="btn btn-outline-dark">Voir tous les produits</a>
+        </div>
+      </div>
+
+      <!-- Product template (clonable via JS) -->
+      <template id="product-template">
+        <div class="col-sm-6 col-md-4">
+          <article class="product-card rounded-lg shadow-sm h-100 d-flex flex-column">
+            <div class="product-image-container">
+              <img class="product-image w-100 h-100" src="images/product-placeholder.jpg" alt="Nom produit" loading="lazy">
+            </div>
+            <div class="product-info p-3 mt-auto">
+              <h3 class="product-title mb-1">Titre produit</h3>
+              <p class="product-description small mb-2">Brève description du produit — matière, coupe.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="product-price">12 500 FCFA</div>
+                <a class="btn btn-sm btn-primary product-btn" href="product.html">Voir</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </template>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="feature-card p-4 rounded-lg shadow-sm">
+              <i class="bi bi-truck display-4 mb-3" aria-hidden="true"></i>
+              <h3>Livraison rapide</h3>
+              <p>Livraison au Sénégal en 24–48h (selon zone).</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="feature-card p-4 rounded-lg shadow-sm">
+              <i class="bi bi-arrow-left-right display-4 mb-3" aria-hidden="true"></i>
+              <h3>Retours faciles</h3>
+              <p>30 jours pour changer d'avis — conditions indiquées en boutique.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="feature-card p-4 rounded-lg shadow-sm">
+              <i class="bi bi-whatsapp display-4 mb-3" aria-hidden="true"></i>
+              <h3>Commande via WhatsApp</h3>
+              <p>Contactez-nous pour finaliser votre commande rapidement.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <h3 class="footer-title"><i class="bi bi-stars me-2 text-warning" aria-hidden="true"></i>Yessay Dans Le Temps</h3>
+          <p class="footer-text">Votre marque de vêtements préférée pour un style unique et intemporel.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4">
+          <h5 class="text-uppercase mb-3">Liens rapides</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="cart.html">Panier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-4">
+          <h5 class="text-uppercase mb-3">Catégories</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="boutique.html?category=pulls">Pulls</a></li>
+            <li><a href="boutique.html?category=tshirts">T-Shirts</a></li>
+            <li><a href="boutique.html?category=casquettes">Casquettes</a></li>
+            <li><a href="boutique.html?category=lacoste">Lacoste</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-8">
+          <h5 class="text-uppercase mb-3">Contact</h5>
+          <div class="footer-contact d-flex align-items-center gap-2 mb-2"><i class="bi bi-geo-alt-fill"></i><span>Dakar, Sénégal</span></div>
+          <div class="footer-contact d-flex align-items-center gap-2 mb-2"><i class="bi bi-envelope-fill"></i><span>yessaydansletemps@gmail.com</span></div>
+          <div class="footer-contact d-flex align-items-center gap-2 mb-2"><i class="bi bi-telephone-fill"></i><span>+221 77 191 57 72</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center mt-4 pt-3 border-top">
+        <p class="mb-0">&copy; <span id="site-year"></span> Yessay Dans Le Temps. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/221771915772?text=Bonjour%20Yessay%20%F0%9F%98%8A" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contacter via WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- SCRIPTS (deferred) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cart.js" defer></script>
+
+  <noscript>
+    <div class="alert alert-warning text-center">JavaScript est désactivé — certaines fonctionnalités (panier, chargement dynamique) peuvent ne pas fonctionner.</div>
+  </noscript>
+
+  <!-- Small inline helpers: year & demo product injection (non intrusif) -->
+  <script defer>
+    // Mettre à jour l'année du footer
+    document.addEventListener('DOMContentLoaded', function () {
+      var y = document.getElementById('site-year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Exemple d'injection légère si aucun JS externe ne gère les produits
+      var container = document.getElementById('featured-products');
+      var tpl = document.getElementById('product-template');
+      if (container && tpl && container.children.length === 0) {
+        for (var i = 0; i < 3; i++) {
+          var clone = tpl.content.cloneNode(true);
+          // personnaliser clone si besoin (titre/prix/images)
+          container.appendChild(clone);
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
