@@ -4,8 +4,7 @@
   "description": "Site e-commerce Yessay Dans Le Temps",
   "scripts": {
     "start": "cd backend && node server.js",
-    "dev": "cd backend && nodemon server.js",
-    "install-backend": "cd backend && npm install",
+    "install-dependencies": "cd backend && npm install",
     "build": "echo 'Build completed'"
   },
   "keywords": ["ecommerce", "senegal", "clothing"],

@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Servir les fichiers statiques - adapté pour la production
+// Servir les fichiers statiques du frontend
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Routes pour servir les pages HTML

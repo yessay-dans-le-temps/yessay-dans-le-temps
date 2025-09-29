@@ -3,7 +3,7 @@ services:
     name: yessay-dans-le-temps
     env: node
     plan: free
-    buildCommand: npm run install-backend
+    buildCommand: npm run install-dependencies
     startCommand: npm start
     envVars:
       - key: NODE_ENV

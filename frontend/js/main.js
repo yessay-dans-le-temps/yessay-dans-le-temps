@@ -1,4 +1,4 @@
-// API base URL
+// API base URL - S'adapte automatiquement à l'environnement
 const API_BASE = window.location.origin;
 
 // Load products from API
