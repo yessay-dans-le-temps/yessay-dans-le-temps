@@ -2,7 +2,11 @@ services:
   - type: web
     name: yessay-dans-le-temps
     env: node
-    rootDir: backend
     plan: free
-    buildCommand: "npm install"
-    startCommand: "node server.js"
+    buildCommand: npm run install-dependencies
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
