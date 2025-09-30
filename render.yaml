@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: yessay-dans-le-temps
+    env: node
+    rootDir: backend
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
