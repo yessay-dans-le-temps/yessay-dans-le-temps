@@ -1,16 +1,1 @@
-{
-  "name": "yessay-dans-le-temps",
-  "version": "1.0.0",
-  "description": "Site e-commerce Yessay Dans Le Temps",
-  "scripts": {
-    "start": "cd backend && node server.js",
-    "install-dependencies": "cd backend && npm install",
-    "build": "echo 'Build completed'"
-  },
-  "keywords": ["ecommerce", "senegal", "clothing"],
-  "author": "Yessay Dans Le Temps",
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  }
-}
+{ "name": "yessay-dans-le-temps", "version": "1.0.0", "description": "Site e-commerce Yessay Dans Le Temps", "main": "backend/server.js", "scripts": { "start": "node backend/server.js", "build": "echo Build completed" }, "dependencies": { "express": "^4.18.2", "cors": "^2.8.5", "dotenv": "^16.0.0" }, "keywords": ["ecommerce", "senegal", "clothing"], "author": "Yessay Dans Le Temps", "license": "MIT", "engines": { "node": ">=14.0.0" } } 
